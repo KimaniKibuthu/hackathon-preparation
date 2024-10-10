@@ -1,0 +1,30 @@
+2024-10-10 21:57:02,453 - INFO - Retrying request to /v1/messages in 0.393932 seconds
+2024-10-10 21:57:05,761 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-10-10 21:57:05,764 - INFO - Cloning GitHub repository from https://github.com/KimaniKibuthu/iris-flowers-app.git to cloned_repo...
+2024-10-10 21:57:10,072 - INFO - Repository cloned successfully.
+2024-10-10 21:57:13,365 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-10-10 21:57:13,371 - INFO - Saving folder structure of cloned_repo to folder_structure.md...
+2024-10-10 21:57:13,405 - INFO - Folder structure saved successfully.
+2024-10-10 21:57:16,438 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-10-10 21:57:16,445 - INFO - Summarizing files in cloned_repo and appending to file_summaries.md...
+2024-10-10 21:57:16,488 - INFO - Requesting LLM to summarize content...
+2024-10-10 21:57:21,066 - INFO - HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-10 21:57:22,098 - INFO - Requesting LLM to summarize content...
+2024-10-10 21:57:39,604 - INFO - HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-10 21:57:39,642 - INFO - File summaries saved successfully.
+2024-10-10 21:57:42,445 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-10-10 21:57:42,448 - INFO - Generating documentation based on file_summaries.md...
+2024-10-10 21:58:08,199 - INFO - HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-10 21:58:10,144 - INFO - Documentation generated successfully.
+2024-10-10 21:58:13,864 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-10-10 21:58:13,868 - INFO - Generating instructions from documentation.md...
+2024-10-10 21:59:10,020 - INFO - HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-10 21:59:11,089 - INFO - Instructions generated successfully.
+2024-10-10 21:59:14,220 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-10-10 21:59:14,224 - INFO - Recreating codebase based on instructions.md...
+2024-10-10 21:59:32,371 - INFO - HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-10 21:59:32,381 - INFO - Generated code successfully received from LLM.
+2024-10-10 21:59:32,428 - INFO - Created file: recreated_codebase\app.py
+2024-10-10 21:59:32,470 - INFO - Created file: recreated_codebase\model.py
+2024-10-10 21:59:32,492 - INFO - Created file: recreated_codebase\requirements.txt
+2024-10-10 21:59:32,492 - INFO - Codebase recreated successfully.
